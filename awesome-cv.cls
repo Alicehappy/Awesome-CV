@@ -577,6 +577,15 @@
   \end{tabular*}%
 }
 
+\newcommand*{\cvedu}[4]{%
+	\vspace{-2.0mm}
+	\setlength\tabcolsep{0pt}
+	\setlength{\extrarowheight}{0pt}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+		\entrytitlestyle{#2} \entrypositionstyle{#1} & \entrydatestyle{#4} \entrylocationstyle{#3} \\
+	\end{tabular*}%
+}
+
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
   \begin{center}
