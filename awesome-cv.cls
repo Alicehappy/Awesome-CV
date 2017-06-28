@@ -86,7 +86,8 @@
   pdftitle={},
   pdfauthor={},
   pdfsubject={},
-  pdfkeywords={}
+  pdfkeywords={},
+  pdfstartview=FitH
 }
 
 
