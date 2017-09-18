@@ -15,6 +15,7 @@ resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 	$(BB) -output-directory=$(EXAMPLES_DIR) resume.bcf
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 	rm $(EXAMPLES_DIR)/*.{aux,bbl,bcf,blg,log,out,run.xml}
 
 cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
