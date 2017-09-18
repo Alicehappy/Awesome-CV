@@ -26,4 +26,4 @@ coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
 	rm $(EXAMPLES_DIR)/*.{aux,log,out}
 
 clean:
-	rm $(EXAMPLES_DIR)/*.{pdf,aux,bbl,bcf,blg,log,out,run.xml}
+	rm $(EXAMPLES_DIR)/*.pdf
