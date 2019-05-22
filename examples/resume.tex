@@ -20,7 +20,7 @@
 %     Configuration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Themes: Awesome-CV
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, a4paper,british]{awesome-cv}
 
 %%% Override a directory location for fonts(default: 'fonts/')
 \fontdir[fonts/]
@@ -51,11 +51,14 @@
 %%% Needed to divide into several files
 \usepackage{import}
 
-\usepackage[backend=biber, style=authortitle, sorting=ydnt, maxnames=9, dashed=false, useprefix=false]{biblatex}
+\usepackage{babel}
+\usepackage{csquotes}
+\usepackage[backend=biber, style=apa, sorting=ydnt, maxnames=9, dashed=false, useprefix=false]{biblatex}
 \DeclareNameAlias{sortname}{given-family} %ensure all authors' names appear in same order; biblatex switches first author by default
 \addbibresource{publications.bib}
 \nocite{*} %display all entries in bib file
-
+% for apa style
+\DeclareLanguageMapping{british}{british-apa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Personal Data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
